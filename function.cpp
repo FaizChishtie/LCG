@@ -9,5 +9,18 @@
 #include <stdio.h>
 #include "function.h"
 
+class Stack();
+class Matrix();
 
+Function::Function(){
+    literals = new Stack();
+    operands = new Stack();
+    commandline = nullptr;
+}
+
+Function::Function(const char* input){
+    literals = new Stack();
+    operands = new Stack();
+    commandline = input;
+}
 
